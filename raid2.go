@@ -37,7 +37,7 @@ func main() {
 				z01.PrintRune('\n')
 			}
 		} else {
-			fmt.Println("Error5")
+			fmt.Println("Error")
 		}
 	}
 }
@@ -46,23 +46,23 @@ func main() {
 
 func Input(args []string) bool {
 	if len(args) != 9 {
-		fmt.Println("Error1")
+		fmt.Println("Error")
 		return false
 	}
 
 	for i := 0; i < len(args); i++ {
 		if len(args[i]) != 9 {
-			fmt.Println("Error2")
+			fmt.Println("Error")
 			return false
 		}
 	}
 	for i := 0; i < len(args); i++ {
 		for _, k := range args[i] {
 			if k == 47 || k == 48 {
-				fmt.Println("Error3")
+				fmt.Println("Error")
 				return false
 			} else if k < 46 || k > 57 {
-				fmt.Println("Error4")
+				fmt.Println("Error")
 				return false
 			}
 		}
